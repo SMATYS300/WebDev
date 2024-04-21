@@ -1,0 +1,3 @@
+{"name":"User","organization":"Scottish Pantry Network","email":"user@gmail.com","password":"$2b$10$x/4b9ZWHp363Bsi/kt9FpucIfcMY9IaDQMQtD75GJa2DLxAxKMk2O","role":"NormalUser","_id":"F0xj1Df2jDDtXpg4"}
+{"name":"Pantry","organization":"Scottish Pantry Network","email":"pantry@gmail.com","password":"$2b$10$u7wJmtmsnTi6skYeDdmzA.i2fN4kRS/fkiRW08xM6vL0Jeies0OHq","role":"pantry","_id":"QPIVIs95oT3KPz9B"}
+{"name":"Admin","organization":"Scottish Pantry Network","email":"admin@gmail.com","password":"$2b$10$ZKZn/wAfJv8rXvqU/cT37.4ZuWnCrGuKF.TgpdF0BIM.4XQ/B/3C.","role":"admin","_id":"xy3ezmxBrngrJuZQ"}

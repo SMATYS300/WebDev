@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Database</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  {{> adminHeader}}
+  <div class="container">
+  <h2>User Database</h2>
+  <table class="table-style">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Organization</th>
+      <th>Role</th>
+      <th>Actions</th>
+    </tr>
+    {{#users}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{email}}</td>
+      <td>{{organization}}</td>
+      <td>{{role}}</td>
+      <td>
+        <a href="/admin/editUser/:id"><button class="button">Edit</button></a>
+        <form action="/admin/deleteUser/:id" method="post" style="display: inline;">
+          <button type="submit" class="button">Delete</button>
+        </form>
+      </td>
+    </tr>
+    {{/users}}
+  </table>
+  </div>
+  {{> footer}}
+</body>
+</html>

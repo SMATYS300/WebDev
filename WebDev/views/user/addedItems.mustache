@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Added Items</title>
+</head>
+<body>
+    {{> userHeader}}
+    <div class="container">
+        <h2>Added Items</h2>
+        <table class="table-style">
+            <thead>
+                <tr>
+                    <th>Produce Type</th>
+                    <th>Quantity</th>
+                    <th>Use By Date</th>
+                    <th>Contact Email</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#items}}
+                <tr>
+                    <td>{{produceType}}</td>
+                    <td>{{quantity}}</td>
+                    <td>{{useByDate}}</td>
+                    <td>{{contactEmail}}</td>
+                    <td>{{description}}</td>
+                </tr>
+                {{/items}}
+            </tbody>
+        </table>
+    </div>
+    {{> footer}}
+</body>
+</html>
+

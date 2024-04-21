@@ -1,0 +1,141 @@
+body {
+  font-family: "Yu Mincho", sans-serif;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #66AFB6;
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+
+.navigation {
+  margin-top: 0 auto;
+  text-align: center;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #3A6164;
+  padding: 10px 20px;
+  width: 33.3%;
+}
+
+.navigation ul li a:hover {
+  background-color: #4D8093;
+}
+
+
+.profile-info {
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 300px;
+}
+
+.button {
+  display: inline-block;
+  justify-content: center;
+  background-color: #3A6164;
+  color: #FFFFFF;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #224042;
+}
+
+.form-container {
+  background-color: #DE9D1F;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-container form {
+  text-align: left;
+}
+
+.form-container label {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-container a {
+  color: #66AFB6; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.form-container a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.form-container h2 {
+  color: #FFFFFF;
+}
+
+
+
+.table-style {
+  background-color: #DE9D1F;
+  color: #FFFFFF;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style th,
+.table-style td {
+  padding: 8px;
+  border: 1px solid #FFFFFF;
+}
+
+.table-style th {
+  background-color: #3A6164;
+  text-align: left; 
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #66AFB6;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+}

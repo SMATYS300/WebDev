@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add User</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  {{> adminHeader}}
+  <div class="container">
+  {{#success}}
+  <p class="success">{{success}}</p>
+  {{/success}}
+  {{#error}}
+  <p class="error">{{error}}</p>
+  {{/error}}
+  <form action="/admin/addUser" method="post" class="form-container">
+    {{#success}}
+    <p class="success">{{success}}</p>
+    {{/success}}
+    {{#error}}
+    <p class="error">{{error}}</p>
+    {{/error}}
+    <h2>Add User</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="organization">Organization:</label>
+    <input type="text" id="organization" name="organization">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <label for="role">Role:</label>
+    <select id="role" name="role" required>
+      <option value="NormalUser">Normal User</option>
+      <option value="Admin">Admin</option>
+      <option value="Pantry">Pantry</option>
+    </select>
+    <br>
+    <button class="button" type="submit">Add User</button>
+  </form>
+  </div>
+  {{> footer}}
+</body>
+</html>
